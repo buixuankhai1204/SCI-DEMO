@@ -26,7 +26,7 @@ public class lookX : MonoBehaviour
 
         Vector3 newRotation = transform.localEulerAngles;
         newRotation.y += lookX * _speedCamera;
-        newRotation.x -= lookY * _speedCamera;
+        newRotation.x += lookY * _speedCamera;
         transform.localEulerAngles = newRotation;
         
     }
